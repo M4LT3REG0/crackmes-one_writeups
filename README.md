@@ -24,6 +24,7 @@ Llegamos al Third stage junto a la flag!
 
 
 Como veis ya podemos usar cualquier contraseña para acceder al programa.Sin utilizar flags
+Para hacer esto debemos de darle click derecho y parchear y guardar el programa como por ejemplo parkourALL.exe
 
 ![parkourall](https://user-images.githubusercontent.com/107126653/198892150-cb231cfd-34bb-4d9a-988f-48a3c3835ae4.png)
 
