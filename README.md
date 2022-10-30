@@ -5,7 +5,7 @@ Para visualizar lo que tenemos vamos a ver la grafica y ya podemos ver la FLAG p
 # "flag{th3_cr3d3n14ls_4r3_s4f3}"
 ![graficoparkour](https://user-images.githubusercontent.com/107126653/198892117-d6ce5f0c-5e19-4b51-8983-7856acb59342.png)
 
-vemos que aqui tenemos al empezar el programa en el x64 lo veremos como ENTRY POINT , y la visualizacion del programa nos poner first stage con un stop debug , podemos deducir que tiene un anti-debug.
+vemos que aqui tenemos al empezar el programa en el x64 lo veremos como ENTRY POINT , y la visualizacion del programa nos poner first stage con un stop debug , podemos deducir que tiene un anti-debug. llamado IsdebuggerPresent , en cual lo introduciremos en el LOG para ver en que direccion de memoria se encuentra y asi anularlo.
 ![first stage](https://user-images.githubusercontent.com/107126653/198892118-ccea343e-cf76-4272-8ddb-e9da09bb5c33.png)
 
 previamnete modificamos RAX  ------------- cambiamos el jne por el jmp para que nos salte al SECOND STAGE.
