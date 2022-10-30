@@ -11,6 +11,9 @@ vemos que aqui tenemos al empezar el programa en el x64 lo veremos como ENTRY PO
 previamnete modificamos RAX  ------------- cambiamos el jne por el jmp para que nos salte al SECOND STAGE.
 ![rax0yjmp](https://user-images.githubusercontent.com/107126653/198892126-c805d674-5467-4b88-b990-03e375614e52.png)
 
+Podemos ver la ordenemos que estan en rojo que son las MODIFICADAS. para llegar a los niveles.
+![level2level3](https://user-images.githubusercontent.com/107126653/198894068-a7171f82-ab59-4682-b15a-16520635c0d6.png)
+
 
 Modificamos esos NOPS ya que si no llenamos esas dos ordenes nos llevaran al donde no queremos.. asi que vamos derechos al THIRD STAGE
 ![3stage](https://user-images.githubusercontent.com/107126653/198892131-a25472a4-add1-4eae-a92c-96e894caef46.png)
