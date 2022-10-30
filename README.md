@@ -2,6 +2,7 @@
 
 Para visualizar lo que tenemos vamos a ver la grafica y ya podemos ver la FLAG pero vamos a llegar a ella y demas un bypass para que valga cualquier contraseña que introduzcamos.
 
+# "flag{th3_cr3d3n14ls_4r3_s4f3}"
 ![graficoparkour](https://user-images.githubusercontent.com/107126653/198892117-d6ce5f0c-5e19-4b51-8983-7856acb59342.png)
 
 vemos que aqui tenemos al empezar el programa en el x64 lo veremos como ENTRY POINT , y la visualizacion del programa nos poner first stage con un stop debug , podemos deducir que tiene un anti-debug.
