@@ -8,16 +8,18 @@ Para visualizar lo que tenemos vamos a ver la grafica y ya podemos ver la FLAG p
 vemos que aqui tenemos al empezar el programa en el x64 lo veremos como ENTRY POINT , y la visualizacion del programa nos poner first stage con un stop debug , podemos deducir que tiene un anti-debug. llamado IsdebuggerPresent , en cual lo introduciremos en el LOG para ver en que direccion de memoria se encuentra y asi anularlo.
 ![first stage](https://user-images.githubusercontent.com/107126653/198892118-ccea343e-cf76-4272-8ddb-e9da09bb5c33.png)
 
-previamnete modificamos RAX  ------------- cambiamos el jne por el jmp para que nos salte al SECOND STAGE.
+previamente modificamos RAX  ------------- cambiamos el jne por el jmp para que nos salte al SECOND STAGE.
 ![rax0yjmp](https://user-images.githubusercontent.com/107126653/198892126-c805d674-5467-4b88-b990-03e375614e52.png)
 
-Podemos ver la ordenemos que estan en rojo que son las MODIFICADAS. para llegar a los niveles.
+Podemos ver la ordenes que estan en rojo que son las MODIFICADAS. para llegar a los niveles.
 ![level2level3](https://user-images.githubusercontent.com/107126653/198894068-a7171f82-ab59-4682-b15a-16520635c0d6.png)
 
 
-para enteder esa comparacion no iremos a RBP a la derecha y le daremos a click derecho A follow in dump  y nos fijamos en que esta comp-41 cogemos la direccion de memoria de RBP 00000000006FFE50 - 41 en calculadora de programacion dandome como resultado : 6FFEOF pues nos vamos a buscar esa direccion de memoria en el volcado/dump  y ahi empezaremos a contar cada dos digitos es un byte POR EJEMPLO 00 (1) empezaremosa contar hasta llegar a 41 y llegaremos a la coomparacion que si es igual pues no saltará A dnde no queremos ir asique vamos a romper esa compraracion introduciendo en lugar de 0 pues un 1
- # La forma sencilla de esto es click sobre la direccion de memoria ensamblar(espacio) y modificar
+para enteder esa comparacion no iremos a RBP a la derecha y le daremos a click derecho A follow in dump  y nos fijamos en que esta comp-41 cogemos la direccion de memoria de RBP 00000000006FFE50 - 41 en calculadora de programacion dando como resultado : 6FFEOF pues nos vamos a buscar esa direccion de memoria en el volcado/dump  y ahi empezaremos a contar cada dos digitos es un byte POR EJEMPLO 00 (1) empezaremosa contar hasta llegar a 41 y llegaremos a la coomparacion que si es igual pues no saltará A dnde no queremos ir asique vamos a romper esa compraracion introduciendo en lugar de 0 pues un 1
 ![2at3rbp](https://user-images.githubusercontent.com/107126653/198991389-f1c5e6d8-33f9-4931-b875-35703b09c42b.png)
+
+ # La forma sencilla de esto es click sobre la direccion de memoria ensamblar(espacio) y modificar
+![s](https://user-images.githubusercontent.com/107126653/198994516-b4398ee9-93de-40f5-bb7e-66615f6479ba.png)
 
 Modificamos esos NOPS ya que si no llenamos esas dos ordenes nos llevaran al donde no queremos.. asi que vamos derechos al THIRD STAGE
 ![3stage](https://user-images.githubusercontent.com/107126653/198892131-a25472a4-add1-4eae-a92c-96e894caef46.png)
