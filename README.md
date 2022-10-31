@@ -11,7 +11,7 @@ Vemos que aqui tenemos al empezar el programa en el x64 lo veremos como ENTRY PO
 Previamente modificamos RAX Poniendole un 0 en vez de dejarlo en 1 ¿porqué? por que sino lo hacemos lo va interpretar como que lo estamos depurando(anti-debug) despues de hacer esto cambiamos el jne por el jmp para que nos salte al SECOND STAGE.
 ![rax0yjmp](https://user-images.githubusercontent.com/107126653/198892126-c805d674-5467-4b88-b990-03e375614e52.png)
 
-Podemos ver la ordenes que estan en rojo que son las MODIFICADAS. para llegar a los niveles.
+Podemos ver la órdenes que estan en rojo que son las MODIFICADAS. para llegar a los niveles.
 ![level2level3](https://user-images.githubusercontent.com/107126653/198894068-a7171f82-ab59-4682-b15a-16520635c0d6.png)
 
 
