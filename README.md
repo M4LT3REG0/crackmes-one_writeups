@@ -8,7 +8,7 @@ Para visualizar lo que tenemos vamos a ver la grafica y ya podemos ver la FLAG p
 vemos que aqui tenemos al empezar el programa en el x64 lo veremos como ENTRY POINT , y la visualizacion del programa nos poner first stage con un stop debug , podemos deducir que tiene un anti-debug. llamado IsdebuggerPresent , en cual lo introduciremos en el LOG para ver en que direccion de memoria se encuentra y asi anularlo.
 ![first stage](https://user-images.githubusercontent.com/107126653/198892118-ccea343e-cf76-4272-8ddb-e9da09bb5c33.png)
 
-previamente modificamos RAX  ------------- cambiamos el jne por el jmp para que nos salte al SECOND STAGE.
+previamente modificamos RAX Poniendole un 0 en vez de dejarlo en 1 ¿por que? por que sino lo hacemos lo va interpretar como que lo estamos depurando(anti-debug) despues de hacer esto cambiamos el jne por el jmp para que nos salte al SECOND STAGE.
 ![rax0yjmp](https://user-images.githubusercontent.com/107126653/198892126-c805d674-5467-4b88-b990-03e375614e52.png)
 
 Podemos ver la ordenes que estan en rojo que son las MODIFICADAS. para llegar a los niveles.
@@ -25,7 +25,7 @@ para enteder esa comparacion no iremos a RBP a la derecha y le daremos a click d
 Llegamos al Third stage junto a la flag!
 ![flag](https://user-images.githubusercontent.com/107126653/198892133-323fac5f-c3a4-4afa-b893-4f38b02c0717.png)
 
-Tenemos varias maneras un trabajo mal hecho pe pro rapido, es cambiar ese jne por un jmp pero un trabajo un poco mas limpio sería : push rax, pop rax que es lo mismo que los nops. push empuja rax al stack y luego lo popeamos . no tiene efecto sobre los registros.
+Tenemos varias maneras un trabajo mal hecho pero rapido, es cambiar ese jne por un jmp pero un trabajo un poco mas limpio sería : push rax, pop rax que es lo mismo que los nops. push empuja rax al stack y luego lo popeamos . no tiene efecto sobre los registros.
 ![ultimo paso](https://user-images.githubusercontent.com/107126653/198996393-a4faf149-651a-41e6-9c8b-369fb5a33cb4.png)
 
 
