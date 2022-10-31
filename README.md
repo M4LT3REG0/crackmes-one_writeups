@@ -15,6 +15,9 @@ Podemos ver la ordenemos que estan en rojo que son las MODIFICADAS. para llegar 
 ![level2level3](https://user-images.githubusercontent.com/107126653/198894068-a7171f82-ab59-4682-b15a-16520635c0d6.png)
 
 
+para enteder esa comparacion no iremos a RBP a la derecha y le daremos a click derecho A follow in dump  y nos fijamos en que esta comp-41
+![2at3rbp](https://user-images.githubusercontent.com/107126653/198991389-f1c5e6d8-33f9-4931-b875-35703b09c42b.png)
+
 Modificamos esos NOPS ya que si no llenamos esas dos ordenes nos llevaran al donde no queremos.. asi que vamos derechos al THIRD STAGE
 ![3stage](https://user-images.githubusercontent.com/107126653/198892131-a25472a4-add1-4eae-a92c-96e894caef46.png)
 
