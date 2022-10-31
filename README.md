@@ -21,15 +21,12 @@ para enteder esa comparacion no iremos a RBP a la derecha y le daremos a click d
  # La forma sencilla de esto es click sobre la direccion de memoria ensamblar(espacio) y modificar
 ![s](https://user-images.githubusercontent.com/107126653/198994516-b4398ee9-93de-40f5-bb7e-66615f6479ba.png)
 
-Modificamos esos NOPS ya que si no llenamos esas dos ordenes nos llevaran al donde no queremos.. asi que vamos derechos al THIRD STAGE
-![3stage](https://user-images.githubusercontent.com/107126653/198892131-a25472a4-add1-4eae-a92c-96e894caef46.png)
-
-
-
+# En este momento parcheamos el programa para guardar el progreso.
 Llegamos al Third stage junto a la flag!
 ![flag](https://user-images.githubusercontent.com/107126653/198892133-323fac5f-c3a4-4afa-b893-4f38b02c0717.png)
 
-
+Tenemos varias maneras un trabajo mal hecho pe pro rapido, es cambiar ese jne por un jmp pero un trabajo un poco mas limpio sería : push rax, pop rax que es lo mismo que los nops. push empuja rax al stack y luego lo popeamos . no tiene efecto sobre los registros.
+![ultimo paso](https://user-images.githubusercontent.com/107126653/198996393-a4faf149-651a-41e6-9c8b-369fb5a33cb4.png)
 
 
 Como veis ya podemos usar cualquier contraseña para acceder al programa.Sin utilizar flags
