@@ -15,7 +15,8 @@ Podemos ver la ordenemos que estan en rojo que son las MODIFICADAS. para llegar 
 ![level2level3](https://user-images.githubusercontent.com/107126653/198894068-a7171f82-ab59-4682-b15a-16520635c0d6.png)
 
 
-para enteder esa comparacion no iremos a RBP a la derecha y le daremos a click derecho A follow in dump  y nos fijamos en que esta comp-41
+para enteder esa comparacion no iremos a RBP a la derecha y le daremos a click derecho A follow in dump  y nos fijamos en que esta comp-41 cogemos la direccion de memoria de RBP 00000000006FFE50 - 41 en calculadora de programacion dandome como resultado : 6FFEOF pues nos vamos a buscar esa direccion de memoria en el volcado/dump  y ahi empezaremos a contar cada dos digitos es un byte POR EJEMPLO 00 (1) empezaremosa contar hasta llegar a 41 y llegaremos a la coomparacion que si es igual pues no saltará A dnde no queremos ir asique vamos a romper esa compraracion introduciendo en lugar de 0 pues un 1
+ # La forma sencilla de esto es click sobre la direccion de memoria ensamblar(espacio) y modificar
 ![2at3rbp](https://user-images.githubusercontent.com/107126653/198991389-f1c5e6d8-33f9-4931-b875-35703b09c42b.png)
 
 Modificamos esos NOPS ya que si no llenamos esas dos ordenes nos llevaran al donde no queremos.. asi que vamos derechos al THIRD STAGE
