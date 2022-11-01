@@ -1,4 +1,5 @@
-# Write-up-crackmes.one-parkourk.exe1crack
+## Write-up-crackmes.one-parkourk.exe1crack
+# (AVISO) En este write-up no voy a dedicarle a explicaciones técnicas.
 
 Para visualizar lo que tenemos vamos a ver la gráfica y ya podemos ver la FLAG pero vamos a llegar a ella y demas un bypass para que valga cualquier contraseña que introduzcamos.
 
